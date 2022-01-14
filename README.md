@@ -1,5 +1,5 @@
 # UDP-Pose
- This is the pytorch implementation of [UDP++](http://presentations.cocodataset.org.s3.amazonaws.com/ECCV20/keypoints/UDP.pdf), which won the Fisrt place in COCO Keypoint Challenge at ECCV 2020 Workshop.
+ This is the pytorch implementation for [UDP++](http://presentations.cocodataset.org.s3.amazonaws.com/ECCV20/keypoints/UDP.pdf), which won the Fisrt place in COCO Keypoint Challenge at ECCV 2020 Workshop.
  ![Illustrating the performance of the proposed UDP](/figures/UDP.png)
  
 # Top-Down
