@@ -1,20 +1,7 @@
 # UDP-Pose
- Official code of 《The Devil is in the Details: Delving into Unbiased Data Processing for Human Pose Estimation》
- Official code of 《AID: Pushing the Performance Boundary of Human Pose Estimation with Information Dropping Augmentation》
+ This is the pytorch implementation of [UDP++](http://presentations.cocodataset.org.s3.amazonaws.com/ECCV20/keypoints/UDP.pdf), which won the Fisrt place in COCO Keypoint Challenge at ECCV 2020 Workshop.
  ![Illustrating the performance of the proposed UDP](/figures/UDP.png)
  
-## News
-* \[2021/1/12\] A new version of UDP paper is provided with more clear and more detailed methodology explaination, extra experimental results, and more discoveries. [ArXiv](https://arxiv.org/abs/1911.07524).
-* \[2020/12/14\] AID for mmpose is provided in [HuangJunJie2017/mmpose](https://github.com/HuangJunJie2017/mmpose) alone with pretrained models in [BaiduDisk](https://pan.baidu.com/s/1mPuVj8piYzgWjoRgyd0Cwg)(dsa9). 
-* \[2020/11/23\] UDP for mmpose is provided in [HuangJunJie2017/mmpose](https://github.com/HuangJunJie2017/mmpose) alone with pretrained models in [BaiduDisk](https://pan.baidu.com/s/1mPuVj8piYzgWjoRgyd0Cwg)(dsa9). Examples for both top-down paradigm and bottom-up paradigm are provided in this branch. 
-* \[2020/11/04\] We propose UDPv1 with LOSS.KPD=3.5. The performance of UDPv1 is superior when compared with UDP in coco dataset. 
-* \[2020/10/26\] We get a better tradeoff between speed and precision by applying UDP to the state-of-the-art Bottom-Up methods.
-* \[2020/8/23\] We win the 2020 COCO Keypoint Detection Challenge with UDP!
-* \[2020/6/12\] UDP for hrnet and UDP for RSN are provided.
-* \[2020/2/24\] Paper has been accepted by CVPR2020!
-* \[2019/11/10\] [Project page](https://github.com/HuangJunJie2017/UDP-Pose) is created.
-* \[2019/11/7\] UDP is now on [ArXiv](https://arxiv.org/abs/1911.07524).
-![demo image](figures/xforwardai.png)
 # Top-Down
 ### Results on MPII val dataset
 |Method---|Head|Sho.|Elb.|Wri.|Hip|Kne.|Ank.|Mean|Mean 0.1|
@@ -115,18 +102,15 @@ For coco, we provide the human detection result and pretrained model at [BaiduDi
 ### Citation
 If you use our code or models in your research, please cite with:
 ```
-@InProceedings{Huang_2020_CVPR,
-author = {Huang, Junjie and Zhu, Zheng and Guo, Feng and Huang, Guan},
-title = {The Devil Is in the Details: Delving Into Unbiased Data Processing for Human Pose Estimation},
-booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
-}
-@article{huang2020aid,
-  title={AID: Pushing the Performance Boundary of Human Pose Estimation with Information Dropping Augmentation,
-  author={Huang, Junjie and Zhu, Zheng and Huang, Guan and Du, Dalong},
-  journal={arXiv preprint arXiv:2008.07139},
+@inproceedings{cai2020learning,
+  title={Learning Delicate Local Representations for Multi-Person Pose Estimation},
+  author={Yuanhao Cai and Zhicheng Wang and Zhengxiong Luo and Binyi Yin and Angang Du and Haoqian Wang and Xinyu Zhou and Erjin Zhou and Xiangyu Zhang and Jian Sun},
+  booktitle={ECCV},
   year={2020}
 }
-
+@article{huang2020joint,
+  title={Joint coco and lvis workshop at eccv 2020: Coco keypoint challenge track technical report: Udp+},
+  author={Huang, Junjie and Shan, Zengguang and Cai, Yuanhao and Guo, Feng and Ye, Yun and Chen, Xinze and Zhu, Zheng and Huang, Guan and Lu, Jiwen and Du, Dalong},
+  year={2020}
+}
 ```
